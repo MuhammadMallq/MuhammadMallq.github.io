@@ -1,253 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Perjalanan</title>
-
-   <!-- swiper css link  -->
-   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
-   <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>Portofolio Saya</h1>
+            <nav>
+                <ul>
+                    <li><a href="#tentang">Tentang Saya</a></li>
+                    <li><a href="#proyek">Proyek</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<!-- header section starts  -->
+    <section id="tentang" class="section">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <p>Halo, nama saya [Nama Anda]. Saya adalah seorang [Profesi Anda] dengan keahlian dalam [Keahlian Anda]. Saya suka menciptakan solusi inovatif melalui desain dan pengembangan web.</p>
+        </div>
+    </section>
 
-<section class="header">
-
-   <a href="home.html" class="logo">PESONA NUSA TRAVEL</a>
-
-   <nav class="navbar">
-      <a href="home.html">Main</a>
-      <a href="menu.html">Wisata</a>
-      <a href="about.html">Perjalanan</a>
-      <a href="package.html">Paket</a>
-      <a href="book.html">Pesan</a>
-   </nav>
-
-   <div id="menu-btn" class="fas fa-bars"></div>
-
-</section>
-
-<!-- header section ends -->
-
-<div class="heading" style="background:url(image/gambar\ 3.jpg) no-repeat">
-   <h1>Pulau Komodo</h1>
-</div>
-
-<!-- about section starts  -->
-
-<section class="about">
-
-   <div class="image">
-      <img src="image/gambar 21.jpg" alt="">
-   </div>
-
-   <div class="content">
-      <h3>Mari Berpetualang Bersama kami</h3>
-      <p>Halo, sungguh menyakitkan untuk diikuti. Benar, tidak pernah ada rasa sakit fisik biasa yang bebas dari kenyamanan, dibutakan oleh pilihan hidup, mereka tidak mengetahui fleksibilitasnya, seolah-olah bukan dirinya sendiri. Sesuatu, benar.</p>
-
-      <div class="icons-container">
-         <div class="icons">
-            <i class="fas fa-map"></i>
-            <span>Tempat Terbaik</span>
-         </div>
-         <div class="icons">
-            <i class="fas fa-hand-holding-usd"></i>
-            <span>Daftar harga</span>
-         </div>
-         <div class="icons">
-            <i class="fas fa-headset"></i>
-            <span>Customer service</span>
-         </div>
-      </div>
-   </div>
-
-</section>
-
-<!-- about section ends -->
-
-<!-- reviews section starts  -->
-
-<section class="reviews">
-
-   <h1 class="heading-title"> Komentar Pelanggan </h1>
-
-   <div class="swiper reviews-slider">
-
-      <div class="swiper-wrapper">
-
-         <div class="swiper-slide slide">
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
+    <section id="proyek" class="section">
+        <div class="container">
+            <h2>Proyek</h2>
+            <div class="proyek-list">
+                <div class="proyek-item">
+                    <img src="proyek1.jpg" alt="Proyek 1">
+                    <h3>Proyek 1</h3>
+                    <p>Deskripsi singkat tentang proyek 1.</p>
+                </div>
+                <div class="proyek-item">
+                    <img src="proyek2.jpg" alt="Proyek 2">
+                    <h3>Proyek 2</h3>
+                    <p>Deskripsi singkat tentang proyek 2.</p>
+                </div>
+                <div class="proyek-item">
+                    <img src="proyek3.jpg" alt="Proyek 3">
+                    <h3>Proyek 3</h3>
+                    <p>Deskripsi singkat tentang proyek 3.</p>
+                </div>
             </div>
-            <p>Senang sekali Pesan disini, Pelayanan Ramah, Harga terjangkau.</p>
-            <h3>Lutfia Rifa Yolanda</h3>
-            <span>Arsitek</span>
-            <img src="image/foto.jpg" alt="">
-         </div>
+        </div>
+    </section>
 
-         <div class="swiper-slide slide">
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-            </div>
-            <p>Pelayanannya Mantap </p>
-            <h3>Sakila Salsabila</h3>
-            <span>Akuntan</span>
-            <img src="image/FotoS1.jpeg" alt="">
-         </div>
+    <section id="kontak" class="section">
+        <div class="container">
+            <h2>Kontak</h2>
+            <p>Ingin bekerja sama? Hubungi saya melalui email di [email@example.com] atau hubungi nomor [Nomor Telepon].</p>
+        </div>
+    </section>
 
-         <div class="swiper-slide slide">
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-            </div>
-            <p>Senang Sekali!</p>
-            <h3>Khildya </h3>
-            <span>Artis</span>
-            <img src="image/FotoK1.jpeg" alt="">
-         </div>
-
-         <div class="swiper-slide slide">
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-            </div>
-            <p>Senang bisa pesan disini</p>
-            <h3>Muhammad Malik</h3>
-            <span>Desain</span>
-            <img src="image/FotoM1.jpeg" alt="">
-         </div>
-
-         <div class="swiper-slide slide">
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-            </div>
-            <p>Senang Bisa Berkunjung?</p>
-            <h3>Nira aradhea</h3>
-            <span>Sekretaris</span>
-            <img src="image/fotoN1.jpeg" alt="">
-         </div>
-
-         <div class="swiper-slide slide">
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-            </div>
-            <p>Bagus Pelayanannya?</p>
-            <h3>Susan Lee</h3>
-            <span>Akuntan</span>
-            <img src="image/foto 2.jpg" alt="">
-         </div>
-
-      </div>
-
-   </div>
-
-</section>
-
-<!-- reviews section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- footer section starts  -->
-
-<section class="footer">
-
-   <div class="box-container">
-
-      <div class="box">
-         <h3>Link Utama</h3>
-         <a href="home.html"> <i class="fas fa-angle-right"></i> Main</a>
-                  <a href="menu.html"> <i class="fas fa-angle-right"></i> Wisata</a>
-
-         <a href="about.html"> <i class="fas fa-angle-right"></i> Perjalanan</a>
-         <a href="package.html"> <i class="fas fa-angle-right"></i> Paket</a>
-         <a href="book.html"> <i class="fas fa-angle-right"></i> Pesan</a>
-      </div>
-
-      <div class="box">
-         <h3>Link Tambahan</h3>
-         <a href="#"> <i class="fas fa-angle-right"></i> Semua Pertanyaan</a>
-         <a href="#"> <i class="fas fa-angle-right"></i> about us</a>
-         <a href="#"> <i class="fas fa-angle-right"></i> privacy policy</a>
-         <a href="#"> <i class="fas fa-angle-right"></i> terms of use</a>
-      </div>
-
-      <div class="box">
-         <h3>Untuk info</h3>
-         <a href="#"> <i class="fas fa-phone"></i> +6282118937714</a>
-         <a href="#"> <i class="fas fa-phone"></i> +628122339125 </a>
-         <a href="#"> <i class="fas fa-envelope"></i> PesonaNusa@gmail.com </a>
-         <a href="#"> <i class="fas fa-map"></i> Bandung, Indonesia </a>
-      </div>
-
-      <div class="box">
-         <h3>Follow Semua</h3>
-         <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
-         <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-         <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
-         <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
-      </div>
-
-   </div>
-
-   <div class="credit"> Copyright <span> PesonaNusa </span>2024 </div>
-
-</section>
-
-<!-- footer section ends -->
-
-
-
-
-
-
-
-
-
-<!-- swiper js link  -->
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-<!-- custom js file link  -->
-<script src="script.js"></script>
-
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Portofolio Saya. Semua hak cipta dilindungi.</p>
+        </div>
+    </footer>
 </body>
 </html>
