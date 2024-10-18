@@ -106,7 +106,7 @@ loadMoreBtn.onclick = () =>{
        spawn();
        requestAnimationFrame(render)
      }
-     function smoke(x, y, index) {
+      function smoke(x, y, index) {
        this.x = x;
        this.y = y;
        this.size = 1;
