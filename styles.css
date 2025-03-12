@@ -14,8 +14,8 @@ header {
 }
 
 .profile-picture.small {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 20%;
     object-fit: cover;
     margin-bottom: 15px;
