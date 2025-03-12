@@ -6,11 +6,21 @@ body {
     padding: 0;
     text-align: center;
 }
+
 header {
     padding: 50px;
     background: #333;
     color: white;
 }
+
+.profile-picture.small {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -19,15 +29,23 @@ nav ul {
     display: flex;
     justify-content: center;
 }
+
 nav ul li {
     margin: 0 15px;
 }
+
 nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px;
     display: inline-block;
+    transition: color 0.3s ease-in-out;
 }
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
 section {
     padding: 50px;
     margin: 20px;
@@ -35,24 +53,37 @@ section {
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1);
 }
+
 .project {
     margin: 20px 0;
     padding: 15px;
     background: #3c3c3c;
     border-radius: 5px;
 }
+
+.project-image.small {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
 .fade-in {
     animation: fadeIn 2s ease-in-out;
 }
+
 .slide-up {
     opacity: 0;
     transform: translateY(50px);
     animation: slideUp 1s ease-out forwards;
 }
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
 @keyframes slideUp {
     from {
         opacity: 0;
