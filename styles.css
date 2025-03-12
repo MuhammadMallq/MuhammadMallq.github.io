@@ -62,7 +62,7 @@ section {
 }
 
 .project-image.small {
-    width: 100px;
+    width: 20px;
     height: 100px;
     object-fit: cover;
     border-radius: 10px;
