@@ -215,9 +215,9 @@ nav ul li a:hover {
 }
 
 .project img {
-    width: 100%;
+    width:400%;
     max-width: 400px;
-    border-radius: 12px;
+    border-radius: 15px;
     transition: transform 0.5s ease;
 }
 
