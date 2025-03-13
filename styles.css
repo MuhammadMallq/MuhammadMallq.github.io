@@ -157,6 +157,33 @@ nav ul li a:hover {
     transform: translateY(0);
 }
 
+.skill-carousel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    animation: scroll-left 10s linear infinite;
+}
+
+.skill-item {
+    flex: 0 0 auto;
+    width: 200px;
+    text-align: center;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-55%);
+    }
+}
+
 /* Bagian Tentang Saya */
 #about {
     text-align: center;
