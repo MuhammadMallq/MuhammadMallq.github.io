@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Branding - Teknik Informatika</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Tambahkan link Font Awesome di <head> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <script type="module" src="https://cdn.jsdelivr.net/gh/domyid/tracker@latest/index.js"></script>
 </head>
 <body>
@@ -25,11 +27,20 @@
         <img src="img/Mall.png" alt="Gambar Profil" class="project-image small">
         <h2>Tentang Saya</h2>
         <p>Saya adalah seorang mahasiswa Teknik Informatika yang memiliki ketertarikan dalam pengembangan web, keamanan siber, dan kecerdasan buatan.</p>
+        <p>Saat ini saya berkuliah di Universitas Logistik dan Bisnis Internasional di Bandung.</p>
+        
+        <h3>Riwayat Pendidikan</h3>
+        <ul>
+            <li>SMP: SMP Negeri 1 Tasikmalaya</li>
+            <li>SMK: SMK Negeri 2 Tasikmalaya</li>
+            <li>D4 : Universitas Logistik dan Bisnis Internasional</li>
+        </ul>
+
         <div class="profile"></div>
     </section>
 
     <section id="skills" class="slide-up">
-        <h2>Skill Bahasa Pemrograman</h2>
+        <h2>Keahlian Pemograman</h2>
         <div class="skill-container">
             <div class="skill-item">
                 <img src="img/html.png" alt="HTML">
@@ -41,30 +52,53 @@
             </div>
             <div class="skill-item">
                 <img src="img/javascript.png" alt="JavaScript">
-                <p>JavaScript (menambahkan interaktivitas dan fungsi dinamis ke halaman web).</p>
+                <p>JavaScript (interaktivitas dan fungsi dinamis ke halaman web).</p>
             </div>
         </div>
     </section>
 
     <section id="projects" class="slide-up">
         <h2>Proyek</h2>
-        <div class="project">
-            <img src="img/proyek1.png" alt="Gambar Website" class="project-image small">
-            <h3>Website Project</h3>
-            <p>Membuat website UMKM pribadi dengan HTML, CSS, dan JavaScript.</p>
-        </div>
-        <div class="project">
-            <img src="todo-list.jpg" alt="Gambar To-Do List" class="project-image small">
-            <h3>Aplikasi To-Do List</h3>
-            <p>Mengembangkan aplikasi To-Do List berbasis web dengan React.js.</p>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Project Website UMKM </h3>
+                <img src="img/proyek1.png" alt="Gambar Website" class="project-image">
+                <img src="img/proyek2.png" alt="Gambar Website" class="project-image">
+            </div>
+    
         </div>
     </section>
 
-    <section id="contact" class="slide-up">
-        <h2>Kontak</h2>
-        <p>Email: Kamalputra1177@email.com</p>
-        <p>Telepon: 082122339125</p>
-        <p>LinkedIn: linkedin.com/in/namaanda</p>
+    <section id="contact" class="slide-up" style="display: grid; grid-template-columns: repeat(2, auto); gap: 10px; text-align: center;">
+        <h2 style="grid-column: span 2;">Kontak</h2>
+    
+        <!-- Email -->
+        <p>
+            <a href="mailto:Kamalputra1177@email.com" style="text-decoration: none;">
+                <i class="fa-solid fa-envelope" style="font-size: 48px; margin-right: 8px;"></i>
+            </a>
+        </p>
+    
+        <!-- Instagram -->
+        <p>
+            <a href="https://www.instagram.com/mhmmdmallq/" target="_blank" style="text-decoration: none;">
+                <i class="fa-brands fa-instagram" style="font-size: 48px; margin-right: 8px;"></i>
+            </a>
+        </p>
+    
+        <!-- WhatsApp -->
+        <p>
+            <a href="https://wa.me/6282122339125" target="_blank" style="text-decoration: none;">
+                <i class="fa-brands fa-whatsapp" style="font-size: 48px; margin-right: 8px;"></i>
+            </a>
+        </p>
+    
+        <!-- LinkedIn -->
+        <p>
+            <a href="https://www.linkedin.com/in/namaanda" target="_blank" style="text-decoration: none;">
+                <i class="fa-brands fa-linkedin" style="font-size: 48px; margin-right: 8px;"></i>
+            </a>
+        </p>
     </section>
 
     <script src="script.js"></script>

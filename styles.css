@@ -26,6 +26,13 @@ p {
     font-size: 1.1rem;
 }
 
+/* Menghilangkan bullet points di Riwayat Pendidikan */
+#about ul {
+    list-style: none; /* Hilangkan bullet */
+    padding: 0;       /* Hilangkan padding bawaan */
+}
+
+
 /* Navbar */
 nav {
     position: sticky;
@@ -215,7 +222,7 @@ nav ul li a:hover {
 }
 
 .project img {
-    width:400%;
+    width: 100%;
     max-width: 400px;
     border-radius: 15px;
     transition: transform 0.5s ease;
