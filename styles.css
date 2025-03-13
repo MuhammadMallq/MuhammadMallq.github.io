@@ -33,39 +33,70 @@ p {
 }
 
 
-/* Navbar */
+/* Navbar styling */
 nav {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, #070707, #252525);
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    list-style: none;
     padding: 0;
     margin: 0;
-    list-style: none;
 }
 
 nav ul li {
     margin: 0 20px;
+    position: relative;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
-    padding: 10px 15px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+/* Efek underline animasi saat hover */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: #6b6868;
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+}
+
+nav ul li a:hover::after {
+    width: 100%;
 }
 
 nav ul li a:hover {
-    background-color: #444;
-    transform: scale(1.1);
+    color: #ffcc00;
+}
+
+/* Efek klik dengan animasi scale */
+nav ul li a:active {
+    transform: scale(0.95);
+    color: #f7f7f2;
+}
+
+/* Efek saat navbar dihover */
+nav:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(90deg, #000000, #000000);
 }
 
 /* Hamburger Menu (Untuk Layar Kecil) */
