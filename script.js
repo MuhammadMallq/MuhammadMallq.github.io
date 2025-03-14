@@ -61,3 +61,13 @@ document.addEventListener("DOMContentLoaded", () => {
     typeEffect();
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const track = document.querySelector(".carousel-track");
+    const items = Array.from(track.children);
+    
+    // Gandakan isi slider agar tidak ada celah kosong
+    items.forEach(item => {
+        const clone = item.cloneNode(true);
+        track.appendChild(clone);
+    });
+});

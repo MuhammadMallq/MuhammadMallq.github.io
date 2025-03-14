@@ -192,28 +192,45 @@ nav:hover {
     overflow: hidden;
     width: 100%;
     position: relative;
+    white-space: nowrap;
 }
 
 .carousel-track {
     display: flex;
     gap: 20px;
-    animation: scroll-left 10s linear infinite;
+    width: max-content;
+    animation: scroll-loop 10s linear infinite;
 }
 
 .skill-item {
     flex: 0 0 auto;
     width: 200px;
     text-align: center;
+    white-space: normal;
 }
 
-@keyframes scroll-left {
+/* Animasi geser ke kiri terus tanpa jeda */
+@keyframes scroll-loop {
     from {
         transform: translateX(0);
     }
     to {
-        transform: translateX(-55%);
+        transform: translateX(-50%);
     }
 }
+
+
+
+/* Duplikat konten untuk menciptakan efek loop */
+.carousel-track::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+}
+
 
 /* Bagian Tentang Saya */
 #about {
