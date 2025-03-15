@@ -33,19 +33,44 @@ document.addEventListener("DOMContentLoaded", () => {
     // Efek ketik otomatis di header
     const typingText = document.querySelector("header p");
     const words = ["Mahasiswa Teknik Informatika", "Web Developer", "Tech Enthusiast"];
-
+    
     let wordIndex = 0;
     let charIndex = 0;
-
+    let isDeleting = false;
+    
+    // Ubah kecepatan di sini
+    const typingSpeed = 150; // Kecepatan mengetik (ms)
+    const erasingSpeed = 50; // Kecepatan menghapus (ms)
+    const delayBetweenWords = 1500; // Jeda sebelum hapus teks (ms)
+    
     const typeEffect = () => {
-        if (charIndex < words[wordIndex].length) {
-            typingText.textContent += words[wordIndex].charAt(charIndex);
+        const currentWord = words[wordIndex];
+    
+        if (!isDeleting) {
+            typingText.textContent = currentWord.substring(0, charIndex + 1);
             charIndex++;
-            setTimeout(typeEffect, 100);
+    
+            if (charIndex === currentWord.length) {
+                isDeleting = true;
+                setTimeout(typeEffect, delayBetweenWords); // Tunggu sebelum mulai menghapus
+                return;
+            }
         } else {
-            setTimeout(() => eraseEffect(), 1500);
+            typingText.textContent = currentWord.substring(0, charIndex - 1);
+            charIndex--;
+    
+            if (charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length; // Pindah ke kata berikutnya
+            }
         }
+    
+        setTimeout(typeEffect, isDeleting ? erasingSpeed : typingSpeed);
     };
+    
+    typeEffect();
+    
+
 
     const eraseEffect = () => {
         if (charIndex > 0) {
