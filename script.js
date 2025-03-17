@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Efek ketik otomatis di header
     const typingText = document.querySelector("header p");
-    const words = ["Mahasiswa Teknik Informatika", "Web Developer", "Tech Enthusiast"];
+    const words = ["Mahasiswa Teknik Informatika", "Web Developer", "Tech Enthusiast", "Cyber ​​Security Analyst"];
     
     let wordIndex = 0;
     let charIndex = 0;
