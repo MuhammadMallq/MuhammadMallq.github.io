@@ -10,6 +10,7 @@ body {
     scroll-behavior: smooth;
 }
 
+
 header {
     text-align: center;
     padding: 2rem 1rem;
@@ -27,6 +28,7 @@ p {
 }
 
 /* Menghilangkan bullet points di Riwayat Pendidikan */
+
 #about ul {
     list-style: none; /* Hilangkan bullet */
     padding: 0;       /* Hilangkan padding bawaan */
@@ -34,6 +36,7 @@ p {
 
 
 /* Navbar styling */
+
 nav {
     display: flex;
     justify-content: center;
@@ -67,6 +70,7 @@ nav ul li a {
 }
 
 /* Efek underline animasi saat hover */
+
 nav ul li a::after {
     content: '';
     position: absolute;
@@ -88,18 +92,21 @@ nav ul li a:hover {
 }
 
 /* Efek klik dengan animasi scale */
+
 nav ul li a:active {
     transform: scale(0.95);
     color: #f7f7f2;
 }
 
 /* Efek saat navbar dihover */
+
 nav:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     background: linear-gradient(90deg, #000000, #000000);
 }
 
 /* Hamburger Menu (Untuk Layar Kecil) */
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -132,6 +139,7 @@ nav:hover {
 }
 
 /* Animasi Hamburger Menu */
+
 .menu-toggle.open span:first-child {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -145,6 +153,7 @@ nav:hover {
 }
 
 /* Efek slide-up */
+
 .slide-up {
     opacity: 0;
     transform: translateY(50px);
@@ -158,6 +167,7 @@ nav:hover {
 
 
 /* Animasi */
+
 .fade-in {
     animation: fadeIn 2s ease-in;
 }
@@ -177,6 +187,7 @@ nav:hover {
 }
 
 /* Animasi Scroll */
+
 .scroll-reveal {
     opacity: 0;
     transform: translateY(50px);
@@ -210,6 +221,7 @@ nav:hover {
 }
 
 /* Animasi geser ke kiri terus tanpa jeda */
+
 @keyframes scroll-loop {
     from {
         transform: translateX(0);
@@ -222,6 +234,7 @@ nav:hover {
 
 
 /* Duplikat konten untuk menciptakan efek loop */
+
 .carousel-track::after {
     content: "";
     display: block;
@@ -233,6 +246,7 @@ nav:hover {
 
 
 /* Bagian Tentang Saya */
+
 #about {
     text-align: center;
     padding: 3rem 1rem;
@@ -250,6 +264,7 @@ nav:hover {
 }
 
 /* Bagian Skill */
+
 #skills {
     text-align: center;
     padding: 3rem 1rem;
@@ -286,6 +301,7 @@ nav:hover {
 }
 
 /* Bagian Proyek */
+
 #projects {
     text-align: center;
     padding: 3rem 1rem;
@@ -308,6 +324,7 @@ nav:hover {
 }
 
 /* Bagian Kontak */
+
 #contact {
     text-align: center;
     padding: 3rem 1rem;
@@ -320,6 +337,7 @@ nav:hover {
 }
 
 /* Responsif */
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
