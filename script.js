@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
+   
     // Animasi scroll (fade-in saat di-scroll)
+    
     const sections = document.querySelectorAll(".slide-up");
-
     const scrollAnimation = () => {
         sections.forEach(section => {
             const sectionTop = section.getBoundingClientRect().top;
@@ -16,7 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", scrollAnimation);
     scrollAnimation(); // Jalankan sekali di awal untuk memeriksa posisi awal
 
+    
     // Animasi hover di navigasi
+    
     const navLinks = document.querySelectorAll("nav ul li a");
 
     navLinks.forEach(link => {
@@ -30,7 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+
     // Efek ketik otomatis di header
+    
     const typingText = document.querySelector("header p");
     const words = ["Mahasiswa Teknik Informatika", "Web Developer", "Tech Enthusiast", "Cyber ​​Security Analyst"];
     
@@ -38,7 +43,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let charIndex = 0;
     let isDeleting = false;
     
+
     // Ubah kecepatan di sini
+    
     const typingSpeed = 150; // Kecepatan mengetik (ms)
     const erasingSpeed = 50; // Kecepatan menghapus (ms)
     const delayBetweenWords = 1500; // Jeda sebelum hapus teks (ms)
@@ -71,7 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
     typeEffect();
     
 
-
     const eraseEffect = () => {
         if (charIndex > 0) {
             typingText.textContent = words[wordIndex].substring(0, charIndex - 1);
@@ -90,7 +96,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const track = document.querySelector(".carousel-track");
     const items = Array.from(track.children);
     
+
     // Gandakan isi slider agar tidak ada celah kosong
+    
     items.forEach(item => {
         const clone = item.cloneNode(true);
         track.appendChild(clone);
