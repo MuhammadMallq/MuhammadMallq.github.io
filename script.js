@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
    
     // Animasi scroll (fade-in saat di-scroll)
     
+
     const sections = document.querySelectorAll(".slide-up");
     const scrollAnimation = () => {
         sections.forEach(section => {
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Animasi hover di navigasi
     
+
     const navLinks = document.querySelectorAll("nav ul li a");
 
     navLinks.forEach(link => {
@@ -36,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Efek ketik otomatis di header
     
+
     const typingText = document.querySelector("header p");
     const words = ["Mahasiswa Teknik Informatika", "Web Developer", "Tech Enthusiast", "Cyber ​​Security Analyst"];
     
@@ -46,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Ubah kecepatan di sini
     
+
     const typingSpeed = 150; // Kecepatan mengetik (ms)
     const erasingSpeed = 50; // Kecepatan menghapus (ms)
     const delayBetweenWords = 1500; // Jeda sebelum hapus teks (ms)
@@ -98,6 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
 
     // Gandakan isi slider agar tidak ada celah kosong
+    
     
     items.forEach(item => {
         const clone = item.cloneNode(true);
